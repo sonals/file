@@ -1,12 +1,13 @@
 
-#------------------------------------------------------------------------------
+#-------------------------------------------------------------------------------
 # xclbin:  file(1) magic for AXLF (xclbin) files used by AMD/Xilinx accelerators
 #
 # The file format is defined by XRT source tree:
 # https://github.com/Xilinx/XRT/blob/master/src/runtime_src/core/include/xclbin.h
-#
-0   string      xclbin2     AMD/Xilinx accelerator AXLF binary file
->0x160	string		>0	\b, VBNV "%.64s"
+# Display accelerator shell name, xclbin uuid and number of sections.
+
+0   string      xclbin2     AMD/Xilinx accelerator AXLF (xclbin) file
+>0x160	string		>0	\b, shell "%.64s"
 >0x1a0	ubelong		x	\b, uuid %08x
 >0x1a4	ubeshort	x	\b-%04x
 >0x1a6	ubeshort	x	\b-%04x
