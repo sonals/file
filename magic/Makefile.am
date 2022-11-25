@@ -338,6 +338,7 @@ $(MAGIC_FRAGMENT_DIR)/wireless \
 $(MAGIC_FRAGMENT_DIR)/wordprocessors \
 $(MAGIC_FRAGMENT_DIR)/wsdl \
 $(MAGIC_FRAGMENT_DIR)/x68000 \
+$(MAGIC_FRAGMENT_DIR)/xclbin \
 $(MAGIC_FRAGMENT_DIR)/xdelta \
 $(MAGIC_FRAGMENT_DIR)/xenix \
 $(MAGIC_FRAGMENT_DIR)/xilinx \
