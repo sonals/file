@@ -45,14 +45,14 @@
 # Display file size, creation date, accelerator shell name, xclbin uuid and
 # number of sections.
 
-0   string      xclbin2     AMD/Xilinx accelerator AXLF (xclbin) file
->0x130	lequad 		x   	\b, %lld bytes
->0x138	leqdate 	x   	\b, created %s
->0x160	string		>0	\b, shell "%.64s"
->0x1a0	ubelong		x	\b, uuid %08x
->0x1a4	ubeshort	x	\b-%04x
->0x1a6	ubeshort	x	\b-%04x
->0x1a8	ubeshort	x	\b-%04x
->0x1aa	ubelong		x	\b-%08x
->0x1ae	ubeshort	x	\b%04x
->0x1c0  lelong          x       \b, %d sections.
+0       string      xclbin2     AMD/Xilinx accelerator AXLF (xclbin) file
+>0x130  lequad      x           \b, %lld bytes
+>0x138  leqdate     x           \b, created %s
+>0x160  string      >0          \b, shell "%.64s"
+>0x1a0  ubelong     x           \b, uuid %08x
+>0x1a4  ubeshort    x           \b-%04x
+>0x1a6  ubeshort    x           \b-%04x
+>0x1a8  ubeshort    x           \b-%04x
+>0x1aa  ubelong     x           \b-%08x
+>0x1ae  ubeshort    x           \b%04x
+>0x1c0  lelong      x           \b, %d sections
